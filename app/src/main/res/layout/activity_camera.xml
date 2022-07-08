@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kwasheniak.rejestratorjazdyandroid.CameraActivity">
+
+    <TextureView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/textureView" />
+
+    <LinearLayout
+        android:id="@+id/params_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/buttonSpeed"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="0 Km/H"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:background="#80000000"/>
+
+        <Button
+            android:id="@+id/buttonDistance"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="0,00 Km"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:background="#80000000"/>
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:background="#80000000"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonRecord"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/cast_expanded_controller_control_toolbar_min_height"
+        android:background="@drawable/cast_ic_expanded_controller_play" />
+
+    <Button
+        android:id="@+id/buttonSettings"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/buttonRecord"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/icongearsettings"/>
+
+    <Button
+        android:id="@+id/buttonShowParams"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/iconspeedometer"
+        android:layout_alignTop="@+id/buttonSettings"
+        android:layout_toStartOf="@+id/buttonRecord" />
+
+    <Button
+        android:id="@+id/buttonFreeStorage"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="11dp"
+        android:background="#80000000"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

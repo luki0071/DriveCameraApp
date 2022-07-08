@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RejestratorJazdyAndroid</string>
+    <string name="buttonVideoFolder">Lista nagrań</string>
+    <string name="buttonCamera">Kamera</string>
+    <string name="textViewTitle">Rejestrator Jazdy</string>
+    <string name="title_activity_recorded_videos">Nagrania</string>
+    <string name="title_activity_settings">Ustawienia</string>
+</resources>

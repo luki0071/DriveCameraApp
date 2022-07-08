@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorGray"
+    tools:context="com.example.kwasheniak.rejestratorjazdyandroid.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/textViewTitle"
+        android:textSize="50sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/buttonVideosFolder"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/buttonVideoFolder"
+        android:textSize="25sp"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonCamera"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonCamera"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
